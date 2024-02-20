@@ -1,0 +1,137 @@
+.modal.open{
+    display: flex;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    display: none;
+}
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 36px);
+    min-height: 200px;
+    position: relative;
+    animation: move ease .5s ;
+}
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+.modal-header-icon{
+    margin-right: 16px;
+}
+.modal .modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.modal .modal-close:hover{
+    opacity: 1;
+    background-color: #ccc;
+}
+.modal .modal-content{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+.modal-button{
+    background-color:#009688;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 18px;
+    color: #fff;
+    
+}
+.modal-button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color: #2196f3;
+}
+@keyframes move{
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* contact form */
+.Contact-content{
+    margin-top: 48px;
+}
+.Contact-content .Contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.Contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+    
+}
+.Contact-form{
+    font-size: 15px;
+}
+.Contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.map-section img{
+    width: 100%;
+}
+.footer{
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+.footer .socials-list{
+    font-size: 24px;
+}
+.footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+.footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+.footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
