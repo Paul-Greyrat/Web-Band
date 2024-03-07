@@ -21,7 +21,7 @@ modalContainer.addEventListener('click', function(event){
 });
 
 // js reponsive
-
+ 
 const header = document.getElementById("header");
 const mobileMenu = document.getElementById("mobile-menu-btn");
 const headerHight = header.clientHeight;
