@@ -6,7 +6,7 @@ const modalContainer = document.querySelector('.js-modal-container')
 
 function showTicket(){
      modal.classList.add('open')
-};
+}; 
 function hidenTicket(){
     modal.classList.remove('open')
 };
